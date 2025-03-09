@@ -11,11 +11,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
+    // Check if the form fields are not empty
+    if (empty($name) || empty($email) || empty($message)) {
+        echo "All fields are required.";
+        exit;
+    }
+
     // Prepare the email
     $to = "your-Info.snconstruction@gmail.com";  // Replace with your own email address
     $subject = "New Message from Contact Form";
     $body = "You have received a new message from $name ($email):\n\n$message";
-    $headers = "From: $email";
+    $headers = "From: $email\r\n";
+    $headers .= "Reply-To: $email\r\n";
+    $headers .= "X-Mailer: PHP/" . phpversion();
 
     // Send the email
     if (mail($to, $subject, $body, $headers)) {
