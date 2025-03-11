@@ -4,39 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S N Construction</title>
-    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <div class="container">
+<body style="font-family: Arial, sans-serif; line-height: 1.6; background-color: #e0f7fa; margin: 0; padding: 0;">
+
+    <!-- Fixed Header -->
+    <header style="
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 1000;
+        background: #006064;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        width: 100%;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    ">
+        <div style="display: flex; flex-direction: column; align-items: center;">
             <div class="logo">
-                <img src="Picture/Logo (2).png" alt="S N Construction Logo">
+                <img src="Picture/Logo (2).png" alt="S N Construction Logo" style="max-width: 250px; max-height: 150px; margin: 0 auto;">
             </div>
-            <div class="contact-details">
+            <div class="contact-details" style="margin-top: 10px;">
                 <p>Call us: 9988526897, 9837805892</p>
-                <p>Email: <a href="mailto:Info.snconstruction@gmail.com">Info.snconstruction@gmail.com</a></p>
+                <p>Email: <a href="mailto:Info.snconstruction@gmail.com" style="color: white; text-decoration: none;">Info.snconstruction@gmail.com</a></p>
             </div>
         </div>
-        
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <!-- Add space so content does not get hidden under the fixed header -->
+    <div style="height: 120px;"></div>
+
+    <!-- Navigation Bar -->
+    <nav style="background: #00796b; color: #fff; padding: 10px 0; text-align: center;">
+        <ul style="list-style: none; display: flex; justify-content: center; padding: 0; margin: 0;">
+            <li style="margin: 0 10px;"><a href="#about" style="color: #fff; text-decoration: none; padding: 5px 10px;">About Us</a></li>
+            <li style="margin: 0 10px;"><a href="#services" style="color: #fff; text-decoration: none; padding: 5px 10px;">Services</a></li>
+            <li style="margin: 0 10px;"><a href="#projects" style="color: #fff; text-decoration: none; padding: 5px 10px;">Projects</a></li>
+            <li style="margin: 0 10px;"><a href="#testimonials" style="color: #fff; text-decoration: none; padding: 5px 10px;">Testimonials</a></li>
+            <li style="margin: 0 10px;"><a href="#contact" style="color: #fff; text-decoration: none; padding: 5px 10px;">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about" class="content">
+    <!-- About Section -->
+    <section id="about" style="max-width: 1200px; margin: 20px auto; padding: 20px; background: #b2dfdb;">
         <h1>Welcome to S N Construction</h1>
         <p>We have been in the construction business since 2009 and specialize in building RCC Chimneys. With over 70 chimneys constructed, we serve clients all over India. Our commitment to quality and excellence is unmatched.</p>
-        <p>Our team of skilled professionals is dedicated to delivering the best results for our clients. Whether it's a small project or a large-scale construction, we handle it all with utmost precision and expertise.</p>
     </section>
 
-    <section id="services" class="content">
+    <!-- Services Section -->
+    <section id="services" style="max-width: 1200px; margin: 20px auto; padding: 20px; background: #c8e6c9;">
         <h2>Our Services</h2>
         <ul>
             <li>RCC Chimney Construction by Slip Form technique</li>
@@ -46,47 +63,47 @@
         </ul>
     </section>
 
-    <section id="projects" class="content">
+    <!-- Projects Section -->
+    <section id="projects" style="max-width: 1200px; margin: 20px auto; padding: 20px; background: #d1c4e9;">
         <h2>Our Projects</h2>
-        <div class="gallery">
-            <!-- Add images of your projects here -->
-            <img src="Picture/Project1.jpg" alt="Project 1">
-            <img src="Picture/Project2.jpg" alt="Project 2">
-            <img src="Picture/Project3.jpg" alt="Project 3">
-            <img src="Picture/Project4.jpg" alt="Project 4">
+        <div style="display: flex; justify-content: space-between; flex-wrap: wrap; margin-top: 20px;">
+            <img src="Picture/Project1.jpg" alt="Project 1" style="max-width: 22%; height: auto;">
+            <img src="Picture/Project2.jpg" alt="Project 2" style="max-width: 22%; height: auto;">
+            <img src="Picture/Project3.jpg" alt="Project 3" style="max-width: 22%; height: auto;">
+            <img src="Picture/Project4.jpg" alt="Project 4" style="max-width: 22%; height: auto;">
         </div>
     </section>
 
-    <section id="testimonials" class="content">
+    <!-- Testimonials Section -->
+    <section id="testimonials" style="max-width: 1200px; margin: 20px auto; padding: 20px; background: #b2dfdb;">
         <h2>Testimonials</h2>
-        <div class="testimonial">
-            <p>"S N Construction delivered our project on time and with exceptional quality. Highly recommend!" - GRAINFUEL DISTILLERIES PVT LTD</p>
+        <div style="background: #f9f9f9; padding: 15px; margin: 15px 0; border-left: 5px solid #00796b;">
+            <p>"S N Construction delivered our project on time and with exceptional quality. Highly recommend!" - GRAINFUEL DISTILLERIES PVT LTD</p>
         </div>
-        <div class="testimonial">
-            <p>"Their expertise and professionalism are unmatched. We are extremely satisfied with their work." - IOL CHEMICALS AND PHARMACEUTICALS LIMITED</p>
+        <div style="background: #f9f9f9; padding: 15px; margin: 15px 0; border-left: 5px solid #00796b;">
+            <p>"Their expertise and professionalism are unmatched. We are extremely satisfied with their work." - IOL CHEMICALS AND PHARMACEUTICALS LIMITED</p>
         </div>
     </section>
 
-    <section id="contact" class="content">
+    <!-- Contact Section -->
+    <section id="contact" style="max-width: 1200px; margin: 20px auto; padding: 20px; background: #c8e6c9;">
         <h2>Contact Us</h2>
-        <form action="submit_form.php" method="post">
+        <form action="submit_form.php" method="post" style="display: flex; flex-direction: column;">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required style="padding: 10px; margin-top: 5px;">
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required style="padding: 10px; margin-top: 5px;">
             <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send Message</button>
+            <textarea id="message" name="message" required style="padding: 10px; margin-top: 5px;"></textarea>
+            <button type="submit" style="margin-top: 10px; padding: 10px; border: none; background: #00796b; color: #fff; cursor: pointer;">Send Message</button>
         </form>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 S N Construction. All rights reserved.</p>
-            <p><a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a></p>
-        </div>
+    <!-- Footer -->
+    <footer style="text-align: center; padding: 20px 0; background: #006064; color: #fff;">
+        <p>&copy; 2025 S N Construction. All rights reserved.</p>
+        <p><a href="#privacy-policy" style="color: white; text-decoration: none;">Privacy Policy</a> | <a href="#terms-of-service" style="color: white; text-decoration: none;">Terms of Service</a></p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>
